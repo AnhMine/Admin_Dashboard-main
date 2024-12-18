@@ -7,10 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "./SliderBanner.css";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  deleteBannerCollection,
-  getBannerCollection,
-} from "../../redux/slices/BannerCollection";
+
 import { formatDay } from "../../utils/format-time";
 import { DeleteConfirmationModal, handleToast } from "./../../utils/toast";
 
@@ -27,10 +24,7 @@ export default function BannerCollection() {
   const navigate = useNavigate();
   const [initialData, setInitialData] = useState([]);
 
-  const handleEdit = (index) => {
-    const idBanner = index.id;
-    navigate(`/dashboard/bannercollection/edit/${idBanner}`);
-  };
+
   const handleDelete = useCallback(
     (index) => {
       DeleteConfirmationModal({

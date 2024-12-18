@@ -17,16 +17,11 @@ import ImageUploader from "../../../components/upload";
 // import { BannerSchema } from '../validate/bannerCollection';
 import { useNavigate, useParams } from "react-router-dom";
 import { handleToast } from "../../../utils/toast";
-import { BannerSchema } from "../validate/bannerConllection";
 import Textarea from "../../../components/textarea";
 import { getBrand } from "../../../redux/slices/brand";
 import { getCategory } from "../../../redux/slices/category";
 import { getAllCollections } from "../../../redux/slices/collection";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  getBannerCollectionById,
-  updateBannerCollection,
-} from "../../../redux/slices/BannerCollection";
 
 const collectionStatus = [
   { value: "true", label: "Hoạt động" },

@@ -15,14 +15,12 @@ import {
 import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
 import ImageUploader from "../../../components/upload";
-import { BannerSchema } from "../validate/bannerConllection";
 import { handleToast } from "../../../utils/toast";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { getAllCollections } from "../../../redux/slices/collection";
 import { getCategory } from "../../../redux/slices/category";
 import { getBrand } from "../../../redux/slices/brand";
-import { createBannerCollection } from "../../../redux/slices/BannerCollection";
 import Textarea from "../../../components/textarea";
 
 const collectionStatus = [
